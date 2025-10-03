@@ -72,7 +72,6 @@ export async function signUpUser(prevState: unknown, formData: FormData) {
       message: "User registered successfully",
     };
   } catch (error) {
-    console.log("Sign-up error:", error);
     if (isRedirectError(error)) {
       throw error;
     }
@@ -91,7 +90,6 @@ export async function signUpUser(prevState: unknown, formData: FormData) {
       error instanceof PrismaClientKnownRequestError &&
       error.code === "P2002"
     ) {
-      console.log("PRISMA ERROR", error);
       return {
         success: false,
         message: "Email already exists. Please use a different email.",
