@@ -49,11 +49,10 @@ const SignInPage = async ({ searchParams }: Props) => {
             <CardTitle className="text-2xl mb-2">Sign In</CardTitle>
             <CardDescription>Sign in to your account</CardDescription>
           </div>
-
-          <CardContent>
-            <CredentialsSignInForm />
-          </CardContent>
         </CardHeader>
+        <CardContent>
+          <CredentialsSignInForm />
+        </CardContent>
       </Card>
     </div>
   );
