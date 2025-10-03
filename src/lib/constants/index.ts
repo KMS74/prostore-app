@@ -8,3 +8,15 @@ export const SERVER_URL =
 
 export const LATEST_PRODUCTS_LIMIT =
   Number(process.env.NEXT_PUBLIC_LATEST_PRODUCTS_LIMIT) || 4;
+
+export const signInEmailValues = {
+  email: "",
+  password: "",
+};
+
+export const signUpEmailValues = {
+  name: "",
+  email: "",
+  password: "",
+  confirmPassword: "",
+};
